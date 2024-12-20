@@ -1,0 +1,37 @@
+html {
+    font-size: 62.5%;
+}
+
+html, body {
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.renders {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 2rem;
+    .item {
+        display: flex;
+        align-items: center;
+        * {
+            white-space: nowrap;
+        }
+        .first, .second {
+            width: 4rem;
+            text-align: center;
+        }
+        .flag {
+            width: 12px;
+            text-align: center;
+        }
+        .equal {
+            margin-left: 4px;
+        }
+    }
+}
